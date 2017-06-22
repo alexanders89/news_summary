@@ -6,6 +6,13 @@
   </head>
   <body>
     <div id='headlines'></div>
+    <script src='src/editorsPick.js'></script>
+    <script>
+    var headlines = document.getElementById('headlines')
+    headlines.innerHTML = loadHeadlines(retrieveHeadlines());
+
+    </script>
+
 
 
 
