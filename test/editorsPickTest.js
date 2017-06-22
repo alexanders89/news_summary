@@ -2,8 +2,7 @@ var json = {"response":{"status":"ok","userTier":"developer","total":1,"editorsP
 
 
 function editorsPickTest(){
-  var editor = document.getElementById('headlines')
-  assert.isTrue(editor.innerHTML === "<ul><li><div>Grenfell fire: a number of tower blocks have same flammable cladding, says Theresa May - Politics live</div></li><li><div>DUP sees 'very good' chance of Tory deal after winning big concessions</div></li><li><div>Prince Harry says no one in royal family wants to be king or queen</div></li></ul>")
+  assert.isTrue(loadHeadlines(json) === "<ul><li><div>Grenfell fire: a number of tower blocks have same flammable cladding, says Theresa May - Politics live</div></li><li><div>DUP sees 'very good' chance of Tory deal after winning big concessions</div></li><li><div>Prince Harry says no one in royal family wants to be king or queen</div></li></ul>")
 
 }
 
