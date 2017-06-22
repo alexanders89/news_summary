@@ -2,7 +2,7 @@ var json = `{"response":{"status":"ok","userTier":"developer","total":1,"editors
 
 
 function editorsPickTest(){
-  assert.isTrue(loadHeadlines(json) === "<ul><li><div>Grenfell fire: a number of tower blocks have same flammable cladding, says Theresa May - Politics live</div></li><li><div>DUP sees 'very good' chance of Tory deal after winning big concessions</div></li><li><div>Prince Harry says no one in royal family wants to be king or queen</div></li></ul>");
+  assert.isTrue(loadHeadlines(json) === "<ul><li><div><a href='https://www.theguardian.com/politics/blog/live/2017/jun/22/hammond-suggests-brexit-transitional-period-could-last-up-to-four-years-politics-live'>Grenfell fire: a number of tower blocks have same flammable cladding, says Theresa May - Politics live</a></div></li><li><div><a href='https://www.theguardian.com/politics/2017/jun/22/dup-sees-very-good-chance-of-tory-deal-after-winning-big-concessions'DUP sees 'very good' chance of Tory deal after winning big concessions</a></div></li><li><div><a href='https://www.theguardian.com/uk-news/2017/jun/22/prince-harry-says-no-one-royal-family-wants-king-queen'Prince Harry says no one in royal family wants to be king or queen</a></div></li></ul>");
 }
 
 editorsPickTest();
