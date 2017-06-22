@@ -2,7 +2,7 @@ function loadHeadlines(data){
   var newData = JSON.parse(data);
   var articles = '<ul>';
   newData['response']['editorsPicks'].forEach(function(article){
-    articles += ("<li><div>" + article['webTitle'] + "</div></li>")
+    articles += ("<li><div><a href='' id='" + article['webUrl'] + "'>" + article['webTitle'] + "</a></div></li>")
   });
   articles += '</ul>'
   return articles
